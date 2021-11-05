@@ -143,7 +143,7 @@ class SnowflakeFileMeta:
     require_compress: bool = False
     dst_file_name: Optional[str] = None
     dst_file_size: int = -1
-    src_stream: Optional[IO[bytes]] = None
+    intermediate_stream: Optional[IO[bytes]] = None
     real_src_stream: Optional[IO[bytes]] = None
     # Specific to Downloads only
     local_location: Optional[str] = None
